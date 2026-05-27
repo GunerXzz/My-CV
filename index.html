@@ -3,54 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sok Chanmony - CV</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #f4f4f4; color: #333; }
-        .container { max-width: 800px; margin: auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h1 { color: #0b2046; border-bottom: 3px solid #d4af37; padding-bottom: 10px; margin-top: 0; }
-        h2 { color: #0b2046; margin-top: 25px; }
-        .section { margin-bottom: 20px; }
-        ul { list-style-type: square; padding-left: 20px; }
-        li { margin-bottom: 8px; }
-        .contact-info { color: #555; font-size: 0.95em; }
-    </style>
+    <title>Sok Chanmony | Web Designer & Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Sok Chanmony</h1>
-        <p class="contact-info"><strong>3rd Year University Student | Full-Stack & Mobile Developer</strong></p>
-        <p class="contact-info">📍 Phnom Penh, Cambodia | ✉️ your.email@example.com | 🔗 github.com/yourusername</p>
+    <nav class="navbar">
+        <div class="logo">SC.</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-        <div class="section">
-            <h2>Profile Summary</h2>
-            <p>Information Systems and Networking student with hands-on experience in full-stack web applications, Flutter mobile development, and network configuration. Proven ability to build comprehensive management systems and professional websites from the ground up.</p>
+    <header class="hero">
+        <div class="hero-content fade-in">
+            <h1>Sok Chanmony</h1>
+            <h2>Creative Web Designer & Full-Stack Developer</h2>
+            <p>Bridging the gap between beautiful digital design and robust backend architecture.</p>
+            <a href="#projects" class="btn">View My Work</a>
         </div>
+    </header>
 
-        <div class="section">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li><strong>Development:</strong> PHP, Laravel, SQL, Flutter, HTML/CSS/JavaScript, C++, Java</li>
-                <li><strong>Networking:</strong> DNS, DHCP, IP Subnetting, Router/Modem Configuration (Huawei ONT)</li>
-                <li><strong>Tools & Design:</strong> VS Code, Git, Canva, AI Media Generation Tools</li>
-            </ul>
-        </div>
+    <section id="about" class="section slide-up">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-text">
+            I am a passionate developer and designer specializing in full-stack web applications and mobile development. From configuring complex networking setups like Huawei ONTs to designing sleek, cinematic product interfaces with AI media tools, I bring a holistic approach to every digital project.
+        </p>
+    </section>
 
-        <div class="section">
-            <h2>Key Projects</h2>
-            <ul>
-                <li><strong>WU System:</strong> Developed a Laravel-based Student Management System featuring full CRUD operations, student listings, and a custom dashboard.</li>
-                <li><strong>NYVES REALTY Platform:</strong> Built a Property Listing Management System with advanced geographic search and filter capabilities specific to Cambodian provinces.</li>
-                <li><strong>THHAKNAY & ASSOCIATES Website:</strong> Designed and deployed a professional law firm website utilizing a dark blue and gold theme with an integrated translation system.</li>
-            </ul>
+    <section id="skills" class="section slide-up">
+        <h2 class="section-title">Technical Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Frontend & Design</h3>
+                <p>HTML5, CSS3, JavaScript, UI/UX Design, Canva, AI Media Generation</p>
+            </div>
+            <div class="skill-card">
+                <h3>Backend & Database</h3>
+                <p>PHP, Laravel, SQL, C++, Java</p>
+            </div>
+            <div class="skill-card">
+                <h3>Mobile & Tools</h3>
+                <p>Flutter, Git, VS Code</p>
+            </div>
         </div>
+    </section>
 
-        <div class="section">
-            <h2>Experience</h2>
-            <ul>
-                <li><strong>Page Administrator, Cushion Skin</strong> | <em>Retail & Digital Marketing</em><br>
-                Manage business communications, digital advertising, and retail operations for a Korean skincare and cosmetic product line.</li>
-            </ul>
+    <section id="projects" class="section slide-up">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>THHAKNAY & ASSOCIATES</h3>
+                    <p>Designed a professional law firm website utilizing a dark blue and gold theme with an integrated translation system.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>NYVES REALTY Platform</h3>
+                    <p>Built a Property Listing Management System with advanced geographic search and filter capabilities for Cambodian provinces.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>WU Student System</h3>
+                    <p>Developed a Laravel-based Student Management System featuring complete CRUD operations and a custom analytics dashboard.</p>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Let's Build Something Great</h2>
+        <p>Phnom Penh, Cambodia | your.email@example.com</p>
+        <div class="social-links">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <p class="copyright">&copy; 2026 Sok Chanmony. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
